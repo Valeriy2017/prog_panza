@@ -1,0 +1,28 @@
+
+.col{
+  height: 0;
+}
+
+@media (min-width: 576px) {
+  .col-sm{
+    height: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md{
+    height: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg{
+    height: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl{
+    height: 0;
+  }
+}

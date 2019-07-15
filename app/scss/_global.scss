@@ -1,0 +1,21 @@
+@import "vars";
+body{
+font-size: 15px;
+line-height: 24px;
+font-family: $roboto;
+color: $text;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li, p{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
