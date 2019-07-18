@@ -1,28 +1,209 @@
+@import"hamburger";
+@import "vars";
 
-.col{
-  height: 0;
+// .col{
+//   height: 0;
+//   }
+
+@media (max-width: 992px) {
+  .header__top-content{
+    .header__top-nav li{
+      a {
+        font-size: 11px;
+        line-height: 53px;
+      }
+      & + li {
+        margin-left: 7px;
+      } 
+    }
+    .header__top-search button{
+      margin-left: 9px;
+      margin-top: 10px;
+    }
+  } 
+  .header__slider{
+    .header__slider-item {
+        padding-top: 100px;
+      .header__slider-item-title h2 {
+        font-size: 30px;
+      }
+    }
+    .header__slider-item-title-h2 h2 {
+      font-size: 65px;
+    }
+    .header__slider-item-text p {
+      font-size: 29px;
+    }
+  }
+  .section__different .section__different-item{
+    .section__different-item {
+      padding-top: 39px;
+      padding-bottom: 50px;
+    }
+    .section__different-text p{
+      font-size: 10px;
+    }
+  }
+  .header .header__slider-img img{
+    width: 131px;
+    bottom: 86px;
+    .slick-prev{
+      right: 124px;
+    }
+    .header__slider .slick-prev, 
+    .header__slider .slick-next {
+      top: 82%;
+  }
+  }
+
 }
+@media (max-width: 768px) {
+  .header__top-content{
+    height: 54px;
+    .hamburger{
+      display: block;
+      margin-top: 14px;
+    }
+     
+    .header__top-search{
+      display: none;
+    }
+    .header__top-nav ul{
+      display: none;
+      position: absolute;
+      top: 62px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: #49473f;
+      z-index: 5;
+    }
+    .header__top-nav li{
+        display: block;
+        & + li{
+          margin-left: 0;
+        }
+        a{
+          display: block;
+          padding: 20px 0;
+          line-height: 0;
+          &::after{
+            content:"";
+            display: none;
+          }
+          
+        }   
+    }
+  }
+  .header__slider{
+    .header__slider-item {
+        padding-top: 55px;
+        padding-bottom: 180px;
+      .header__slider-item-title h2 {
+        font-size: 25px;
+      }
+    }
+    .header__slider-item-title-h2 h2 {
+      font-size: 53px;
+    }
+    .header__slider-item-text p {
+      font-size: 23px;
+    }
+    
+  }
+  .section__different .section__different-item{
+    .section__different-item {
+      padding-top: 39px;
+      padding-bottom: 50px;
+    }
+    
+  }
+  .header .header__slider-img img{
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .header__top-logo{
+    margin-left: 15px;
+  }
+  .hamburger{
+    margin-right: 15px;
+  }
+  .header__slider{
+    .header__slider-item {
+        padding-top: 55px;
+        padding-bottom: 180px;
+      .header__slider-item-title h2 {
+        font-size: 20px;
+      }
+    }
+    .header__slider-item-title-h2 h2 {
+      font-size: 40px;
+    }
+    .header__slider-item-text p {
+      font-size: 17px;
+    }
+    .header__slider-img{
+      display: none;
+    }
+  }
+}
+@media (max-width: 460px) {
+  
+  .header__slider{
+    .header__slider-item {
+        padding-top: 45px;
+        padding-bottom: 180px;
+      .header__slider-item-title h2 {
+        font-size: 14px;
+      }
+    }
+    .header__slider-item-title-h2 h2 {
+      font-size: 30px;
+    }
+    .header__slider-item-text p {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+    .slider-buttom {
+      width: 210px;
+      display: block;
+    }
+    .header__slider-buttom-explore,
+    .header__slider-buttom-purchase {
+      padding: 15px 25px 15px 25px;
+    }
+  }
 
+}
 @media (min-width: 576px) {
-  .col-sm{
-    height: 0;
-  }
+  // .col-sm{
+  //   height: 0;
+  // }
 }
 
-@media (min-width: 768px) {
-  .col-md{
-    height: 0;
+@media (min-width: 769px) {
+  .header__top-logo, 
+  .header__top-search, 
+  .header__top-nav ul{
+    display: block !important;
   }
+  .hamburger{
+    display: none;
+  }
+  // .col-md{
+  //   height: 0;
+  // }
 }
 
 @media (min-width: 992px) {
-  .col-lg{
-    height: 0;
-  }
+  // .col-lg{
+  //   height: 0;
+  // }
 }
 
 @media (min-width: 1200px) {
-  .col-xl{
-    height: 0;
-  }
+  // .col-xl{
+  //   height: 0;
+  // }
 }

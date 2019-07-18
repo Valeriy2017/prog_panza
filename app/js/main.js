@@ -1,5 +1,21 @@
 $(function(){
 
+  $('.hamburger').click(function(){
+    $('.header__top-nav ul').slideToggle();
+   });
+
+
+   $('.header__slider').slick({
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
+  });
  
 //   $(".js-range-slider").ionRangeSlider({
 //     type: "double",

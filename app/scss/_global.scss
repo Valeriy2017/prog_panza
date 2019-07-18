@@ -1,9 +1,12 @@
 @import "vars";
+*{
+  box-sizing: border-box;
+}
 body{
 font-size: 15px;
 line-height: 24px;
-font-family: $roboto;
-color: $text;
+font-family: $montserrat;
+color: $texta;
 }
 ul{
   margin: 0;
