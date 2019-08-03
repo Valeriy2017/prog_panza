@@ -41,7 +41,8 @@ gulp.task('browser-sync', function(){
 
 
 gulp.task('js', function(){
-    return gulp.src(['node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js','node_modules/slick-carousel/slick/slick.js','node_modules/mixitup/dist/mixitup.js','node_modules/ion-rangeslider/js/ion.rangeSlider.js', 'node_modules/jquery-form-styler/dist/jquery.formstyler.js'])
+    return gulp.src(['node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js','node_modules/slick-carousel/slick/slick.js','node_modules/mixitup/dist/mixitup.js',
+    'node_modules/ion-rangeslider/js/ion.rangeSlider.js', 'node_modules/jquery-form-styler/dist/jquery.formstyler.js'])
         .pipe(concat('lids.min.js'))
         .pipe(uglifujs())
         .pipe(gulp.dest('app/js'))

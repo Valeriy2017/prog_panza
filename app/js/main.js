@@ -6,6 +6,8 @@ $(function(){
 
 
    $('.header__slider').slick({
+    prevArrow:'<button type="button" class="slick-btn slick-prev"></button>',
+    nextArrow:'<button type="button" class="slick-btn slick-next"></button>',
     dots: false,
     responsive: [
       {
@@ -16,7 +18,28 @@ $(function(){
       }
     ]
   });
- 
+  $(".progress").each(function()
+    {
+      let data,progressHeight, color;
+      data = $(this).attr('data');
+      progressHeight = $(this).attr('progressHeight');
+      color = $(this).attr('color');
+      $(this).css('height', progressHeight);
+      let barSpan = '<span class="bar"></span>';
+      let valueSpan = '<span class="value"></span>';
+      $(this).append(barSpan);
+      $(this).append(valueSpan);
+      $(this).children(".bar").css('width', data+'%');
+      $(this).children(".bar").css('background-color', color);
+      // $(this).children(".value").html(data+'%');
+    })
+    
+    
+    var mixer =  mixitup ( ' .amazing__work_img ' );
+    
+    
+
+
 //   $(".js-range-slider").ionRangeSlider({
 //     type: "double",
 //     // grid: true,
@@ -34,7 +57,7 @@ $(function(){
     
    
   
-// // var mixer = mixitup('.lets__check__container');
+
 
 // $('.slider__wrapper').slick({
 //   infinite: true,

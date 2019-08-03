@@ -55,7 +55,22 @@
       top: 82%;
   }
   }
-
+.section__amazing-work{
+  .amazing__work-content{
+    a{
+      text-align: center;
+    img{
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+    
+  }
+}
+.section__amazing-work .amazing__work_content .amazing__img-item {
+  width: 33%;
+  max-width: 100%;
+}
 }
 @media (max-width: 768px) {
   .header__top-content{
@@ -141,6 +156,7 @@
       top: 48px !important;
     }
 }
+
 }
 @media (max-width: 576px) {
   .header__top-logo{
@@ -177,6 +193,10 @@
   .section__creatiwe .creatiwe__content-flex .creatiwe__content-title h2 {
     font-size: 12px !important;
   }
+  .section__amazing-work .amazing__work_content .amazing__img-item {
+    width: 50%;
+    max-width: 100%;
+  }
 }
 @media (max-width: 460px) {
   
@@ -207,7 +227,14 @@
   .section__creatiwe .section__creatiwe-title h2 {
     font-size: 23px !important;
   }
-
+  .section__amazing-work .amazing__work_content .amazing__img-item {
+    max-width: 100%;
+    width: 100%;
+    .amazing__active_content{
+      padding-top: 115px;
+      padding-bottom: 115px;
+    }
+  }
 }
 @media (min-width: 576px) {
   // .col-sm{
