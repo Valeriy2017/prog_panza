@@ -1,1 +1,203 @@
 @import "vars";
+.header{
+  background-image: url(../img/header.jpg);
+  background-position: top center;
+  background-size: cover;
+  max-width: 1920px;
+  width: 100%;
+  position: relative;
+  .header__slider-img img{
+    position: absolute;
+    width: 158px;
+    bottom: 115px;
+    right: 25px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+  }
+  
+}
+.header__top{
+  padding: 13px 0px 8px 0px;
+  background-color: #49473f7a;
+}
+.header__top-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  .header__top-logo img{
+    position: absolute;
+    bottom: 3px;
+    width: 160px;
+    
+  }
+}
+.header_nav-button{
+  display: flex;
+}
+  .header__top-nav{
+    li{
+      display: inline-block;
+      & + li{
+        margin-left: 10px;
+      }
+      a{
+        text-transform: uppercase;
+        color: $texta;
+        font-size: 13px;
+        line-height: 72px;
+        font-weight: 700;
+        &:hover{
+          color:$greenblu;
+          transition:all 1s;
+          position: relative;
+          .actove,
+          &::after{
+            content:"";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $greenblu;
+            transition:all 1s;
+          }
+        }
+      }
+      .activ{
+        color: $greenblu;
+      }
+    }
+  }
+  .header__top-search{
+    button{
+      display: block;
+      cursor: pointer;
+      background: none;
+      outline: none;
+      border: 0;
+      margin-left: 24px;
+      margin-top: 17px;
+      position: relative;
+      &::after{
+        content:"\e986";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: icomoon;
+        font-size: 24px;
+        color: $texta; 
+      }
+
+    }
+  }
+
+.header__slider-item{
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 224px;
+  text-align: center;
+}
+.header__slider-item-title h2{
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  span{
+    color: $greenblu;
+  }
+}
+.header__slider-item-title-h2 h2{
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header__slider-item-text p{
+  font-size: 35px;
+  font-weight: 300;
+  color: #d4d4d4;
+  margin-bottom: 35px;
+}
+.slider-buttom{
+  width: 393px;
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.header__slider-buttom-explore,
+.header__slider-buttom-purchase{
+  display: block;
+  padding: 26px 30px 26px 30px;
+  margin: 13px;
+  background-color: $greenblu;
+  border-top: 4px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition:all 1s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+  -ms-transition:all 1s;
+  -o-transition:all 1s;
+  &:hover{
+    background-color: #00cbf6;
+  }
+  a{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+.header__slider{
+  position: relative;
+    button.slick-next,
+    button.slick-prev{
+      width: 35px;
+      height: 35px;
+      background-color: #3c4140;
+      &:hover{
+        background-color: $greenblu;
+        transition:all 1.5s;
+        &::before{
+          color: #fff;
+          transition:all 1.5s;
+          -webkit-transition:all 1.5s        ;
+          -moz-transition:all 1.5s        ;
+          -ms-transition:all 1.5s        ;
+          -o-transition:all 1.5s        ;
+          }
+        }
+    }
+    .slick-next {
+      right: 25px;
+      &::before{
+        content:"\f105";
+        font-family: icomoon;
+        color: #878787;
+        font-size: 25px;
+      }
+    }
+    .slick-prev{
+      right: 151px;
+      left: inherit;
+      &::before{
+        content:"\f104";
+        font-family: icomoon;
+        color: #878787;
+        font-size: 25px;
+      }
+    }
+    .slick-prev, .slick-next {
+      top: 86%;
+    }
+}
