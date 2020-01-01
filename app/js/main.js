@@ -36,6 +36,24 @@ $(function(){
     
     
     var mixer =  mixitup ( ' .amazing__work_img ' );
+
+    // $(function() {
+    //   $("div.tabs_nav").on("click", ".tab:not(.active)", function() {
+    //     $(this)
+    //       .addClass("active")
+    //       .siblings()
+    //       .removeClass("active")
+    //       .closest("div.section__services-tab")
+    //       .find("div.tabs__item")
+    //       .removeClass("active")
+    //       .eq($(this).index())
+    //       .addClass("active");
+    //   });
+
+    $(" .tabs_services .tab").click(function() {
+      $(" .tabs_services .tab").removeClass("active").eq($(this).index()).addClass("active");
+       $(".tabs_services .tabs__item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
     
     
 

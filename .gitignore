@@ -3,8 +3,8 @@
 # compiled output
 /dist
 package-lock.json
-app/css/
-app/js/libs.min.js
+# app/css/
+# app/js/libs.min.js
 
 # dependencies
 /node_modules

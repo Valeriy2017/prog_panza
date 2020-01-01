@@ -67,10 +67,20 @@
     
   }
 }
-.section__amazing-work .amazing__work_content .amazing__img-item {
-  width: 33%;
-  max-width: 100%;
+  .section__amazing-work .amazing__work_content .amazing__img-item {
+    width: 33%;
+    max-width: 100%;
+  }
+  .section__services-tab .tabs_services  .tabs_nav .tab {
+    font-size: 13px;
+    line-height: 50px;
+  }
 }
+@media (max-width: 790px){
+  .section__services-tab .tabs_services .tabs_nav .tab {
+    font-size: 11px;
+    line-height: 40px;
+  }
 }
 @media (max-width: 768px) {
   .header__top-content{
@@ -156,7 +166,9 @@
       top: 48px !important;
     }
 }
-
+.section__services-tab .tabs_services .tabs_nav .tab {
+  font-size: 9px;
+}
 }
 @media (max-width: 576px) {
   .header__top-logo{
@@ -197,6 +209,19 @@
     width: 50%;
     max-width: 100%;
   }
+  .section__services-tab .tabs_services .tabs_nav .tab {
+    font-size: 13px;
+    width: 33.33333%;
+    
+  }
+  .section__services-tab .tabs_services .tabs_nav .tab:nth-child(4){
+    margin-left: 0;
+  }
+  .section__services-tab .tabs_services .tabs__services_content,
+  .section__services-tab .tabs_services .tabs_nav{
+    margin-left: 0;
+  }
+ 
 }
 @media (max-width: 460px) {
   
@@ -234,6 +259,14 @@
       padding-top: 115px;
       padding-bottom: 115px;
     }
+  }
+  .section__services-tab .tabs__services_content .tab__img{
+    float: none;
+  }
+}
+@media (max-width: 320px) {
+  .section__services-tab .tabs_services .tabs_nav .tab {
+    font-size: 10px;    
   }
 }
 @media (min-width: 576px) {
